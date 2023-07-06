@@ -12,7 +12,7 @@ struct LikedView: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Top Rated")
+                    Text("Liked")
                         .bold()
                         .font(.title2)
                         .padding(.leading)
@@ -22,10 +22,18 @@ struct LikedView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)
-                    Text("Most Watched")
+                    Text("Watch List")
                         .bold()
                         .font(.title2)
                         .padding(.leading)
@@ -35,10 +43,18 @@ struct LikedView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)
-                    Text("Most Liked")
+                    Text("Watched")
                         .bold()
                         .font(.title2)
                         .padding(.leading)
@@ -48,13 +64,21 @@ struct LikedView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)
                 }
             }
             .frame(width: UIScreen.main.bounds.width)
-            .navigationTitle("Liked")
+            .navigationTitle("Tracker")
         }
     }
 }

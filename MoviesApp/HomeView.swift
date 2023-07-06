@@ -22,6 +22,14 @@ struct HomeView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)
@@ -35,6 +43,14 @@ struct HomeView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)
@@ -48,6 +64,14 @@ struct HomeView: View {
                             MovieTab(imageName: "Endgame", movieName: "Avengers")
                             MovieTab(imageName: "FordvFerrari", movieName: "FordvFerrari")
                             MovieTab(imageName: "SpiderMan", movieName: "SpiderMan")
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                     .padding(.horizontal)

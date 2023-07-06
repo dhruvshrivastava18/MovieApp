@@ -29,7 +29,7 @@ struct ContentView: View {
             LikedView()
                 .tabItem {
                     Image(systemName: "heart.fill")
-                    Text("Liked")
+                    Text("Tracker")
                 }
                 .tag(2)
         }
