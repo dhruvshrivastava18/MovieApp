@@ -122,7 +122,6 @@ struct MovieGenre: Decodable {
 }
 
 struct MovieCredit: Decodable {
-    
     let cast: [MovieCast]
     let crew: [MovieCrew]
 }

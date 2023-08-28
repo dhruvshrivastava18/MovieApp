@@ -33,7 +33,10 @@ struct MovieSearchView: View {
                 }
                 
             }
-            .searchable(text: $movieSearchState.query, placement: .automatic)
+            .overlay(alignment: .bottom,content: {
+                SearchBarView(placeholder: "Search movies", text: self.$movieSearchState.query)
+            })
+//            .searchable(text: $movieSearchState.query, placement: .automatic)
             .onAppear {
                 self.movieSearchState.startObserve()
             }
