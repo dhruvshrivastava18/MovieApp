@@ -2,7 +2,7 @@
 //  MovieService.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on 23/05/20.
+//  Created by Dhruv Shrivastava on 23/05/20.
 
 
 import Foundation
@@ -12,6 +12,7 @@ protocol MovieService {
     func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
     func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
+    func searchMovieGenre(genre: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
 }
 
 enum MovieListEndpoint: String, CaseIterable, Identifiable {

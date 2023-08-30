@@ -2,7 +2,7 @@
 //  ImageLoader.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on 23/05/20.
+//  Created by Dhruv Shrivastava on 23/05/20.
 
 
 import SwiftUI

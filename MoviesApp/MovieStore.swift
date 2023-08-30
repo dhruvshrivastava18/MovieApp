@@ -2,7 +2,7 @@
 //  MovieStore.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on 23/05/20.
+//  Created by Dhruv Shrivastava on 23/05/20.
 
 
 import Foundation
@@ -47,6 +47,18 @@ class MovieStore: MovieService {
             "query": query
         ], completion: completion)
     }
+    func searchMovieGenre(genre: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseAPIURL)/discover/movie") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
+        self.loadURLAndDecode(url: url, params: [
+            "language": "en-US",
+            "include_adult": "true",
+            "region": "US",
+            "with_genres": genre
+        ], completion: completion)
+    }
     
     private func loadURLAndDecode<D: Decodable>(url: URL, params: [String: String]? = nil, completion: @escaping (Result<D, MovieError>) -> ()) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
@@ -65,7 +77,7 @@ class MovieStore: MovieService {
             completion(.failure(.invalidEndpoint))
             return
         }
-        
+        print(finalURL)
         urlSession.dataTask(with: finalURL) { [weak self] (data, response, error) in
             guard let self = self else { return }
             

@@ -2,7 +2,7 @@
 //  MovieSearchState.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on .
+//  Created by Dhruv Shrivastava on .
 
 
 import SwiftUI
@@ -63,6 +63,8 @@ class MovieSearchState: ObservableObject {
             }
         }
     }
+    
+    
     
     deinit {
         self.subscriptionToken?.cancel()

@@ -2,7 +2,7 @@
 //  MovieListObservableObject.swift
 //  SwiftUIMovieDB
 //
-//  Created by Alfian Losari on 22/05/20.
+//  Created by Dhruv Shrivastava on 22/05/20.
 
 
 import SwiftUI

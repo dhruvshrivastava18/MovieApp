@@ -2,7 +2,7 @@
 //  MovieDetailView.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on .
+//  Created by Dhruv Shrivastava on .
 
 
 import SwiftUI

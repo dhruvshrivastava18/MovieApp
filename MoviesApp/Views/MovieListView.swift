@@ -2,7 +2,7 @@
 //  MovieListView.swift
 //  SwiftUIMovieDB
 //
-//  Created by Alfian Losari on 22/05/20.
+//  Created by Dhruv Shrivastava on 22/05/20.
 
 
 import SwiftUI
@@ -26,7 +26,6 @@ struct MovieListView: View {
                             self.nowPlayingState.loadMovies(with: .nowPlaying)
                         }
                     }
-                    
                 }
                 .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                 

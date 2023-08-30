@@ -2,7 +2,7 @@
 //  Movie+Stub.swift
 //  SwiftUIMovieDb
 //
-//  Created by Alfian Losari on 23/05/20.
+//  Created by Dhruv Shrivastava on 23/05/20.
 
 
 import Foundation
@@ -12,7 +12,11 @@ extension Movie {
     
     static var stubbedMovies: [Movie] {
         let response: MovieResponse? = try? Bundle.main.loadAndDecodeJSON(filename: "movie_list")
-        return response!.results
+        
+        if let result = response?.results {
+            return result
+        }
+        return []
     }
     
     static var stubbedMovie: Movie {
